@@ -56,3 +56,14 @@ a {
   text-decoration: none;
   font-weight: normal;
 }
+
+.rocket-details {
+  width: 90%;
+  margin: 10px auto;
+  flex-flow: wrap;
+  gap: 10%;
+}
+
+.flex-d-column {
+  flex-direction: column;
+}
