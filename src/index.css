@@ -32,7 +32,6 @@ header {
 }
 
 .nav-links {
-  /* gap: 0 40px; */
   align-items: center;
 }
 
@@ -45,4 +44,8 @@ a {
 .line {
   border-left: 1.5px solid #000;
   height: 15px;
+}
+
+.active {
+  text-decoration: underline;
 }
