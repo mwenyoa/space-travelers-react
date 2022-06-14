@@ -7,10 +7,9 @@ import Profile from './components/Profile';
 function App() {
   return (
     <Routes>
-      <Route exact path="/" element={<Rockets />} />
-      <Route path="/Rockets" element={<Rockets />} />
-      <Route path="/Missions" element={<Missions />} />
-      <Route path="/Profile" element={<Profile />} />
+      <Route path="/" element={<Rockets />} />
+      <Route path="Missions" element={<Missions />} />
+      <Route path="Profile" element={<Profile />} />
     </Routes>
   );
 }
