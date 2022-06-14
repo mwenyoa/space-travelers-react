@@ -48,4 +48,29 @@ a {
 
 .active {
   text-decoration: underline;
+  font-weight: bold;
+}
+
+.rocket-details {
+  gap: 10%;
+  width: 90%;
+  margin: 15px auto;
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(70, 157, 197);
+  border-radius: 5px;
+  color: #fff;
+  font-size: large;
+  margin-top: 10px;
+  border-color: rgb(70, 157, 197);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.reserve-rocket-info {
+  flex-direction: column;
 }

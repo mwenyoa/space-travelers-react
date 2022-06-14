@@ -9,7 +9,7 @@ const Header = () => (
       <h1>Space Travelers&apos; Hub</h1>
     </div>
     <nav className="d-flex nav-links">
-      <NavLink to="/Rockets">Rockets</NavLink>
+      <NavLink to="/">Rockets</NavLink>
       <NavLink to="/Missions">Missions</NavLink>
       <div className="line" />
       <NavLink to="/MyProfile">My Profile</NavLink>
