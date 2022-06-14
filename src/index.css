@@ -32,7 +32,6 @@ header {
 }
 
 .nav-links {
-  /* gap: 0 40px; */
   align-items: center;
 }
 
@@ -47,23 +46,31 @@ a {
   height: 15px;
 }
 
-.styled-link {
+.active {
   text-decoration: underline;
   font-weight: bold;
 }
 
-.no-styled-link {
-  text-decoration: none;
-  font-weight: normal;
-}
-
 .rocket-details {
-  width: 90%;
-  margin: 10px auto;
-  flex-flow: wrap;
   gap: 10%;
+  width: 90%;
+  margin: 15px auto;
 }
 
-.flex-d-column {
+button {
+  padding: 10px;
+  background-color: rgb(70, 157, 197);
+  border-radius: 5px;
+  color: #fff;
+  font-size: large;
+  margin-top: 10px;
+  border-color: rgb(70, 157, 197);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.reserve-rocket-info {
   flex-direction: column;
 }
