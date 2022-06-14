@@ -1,10 +1,8 @@
 import React from 'react';
 
-const Missions = () => {
-  return (
-    <div>
-      Hello
-    </div>
-  );
-};
+const Missions = () => (
+  <div>
+    Hello
+  </div>
+);
 export default Missions;
