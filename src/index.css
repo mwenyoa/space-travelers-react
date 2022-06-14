@@ -46,3 +46,13 @@ a {
   border-left: 1.5px solid #000;
   height: 15px;
 }
+
+.styled-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.no-styled-link {
+  text-decoration: none;
+  font-weight: normal;
+}
