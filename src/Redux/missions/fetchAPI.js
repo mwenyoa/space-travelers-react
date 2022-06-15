@@ -5,4 +5,6 @@ const getData = async () => {
   const data = res.json();
   return data;
 };
+
+getData();
 export default getData;
