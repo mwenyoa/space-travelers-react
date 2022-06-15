@@ -6,5 +6,4 @@ const fetchRocketData = async () => {
   return resRockets;
 };
 
-fetchRocketData();
 export default fetchRocketData;
