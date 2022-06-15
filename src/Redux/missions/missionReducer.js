@@ -1,5 +1,5 @@
-// import getData from './fetchAPI';
-// import { useDispatch } from "react-redux";
+import getData from './fetchAPI';
+
 export const ADD_STORE = 'ADD_STORE';
 
 export const addStore = (payload) => ({
@@ -7,19 +7,18 @@ export const addStore = (payload) => ({
   payload,
 });
 
-// export const displayMissions = () =>
-// async (dispatch) => {
-//   const missions = await getData();
-//   const arr = [];
-//   missions.forEach((obj) => {
-//     arr.push({
-//       mission_id: obj.mission_id,
-//       mission_name: obj.mission_name,
-//       description: obj.description,
-//     });
-//   });
-//   dispatch(addStore(arr));
-// };
+export const displayMissions = () => async (dispatch) => {
+  const missions = await getData();
+  const arr = [];
+  missions.forEach((obj) => {
+    arr.push({
+      mission_id: obj.mission_id,
+      mission_name: obj.mission_name,
+      description: obj.description,
+    });
+  });
+  dispatch(addStore(arr));
+};
 
 const missionReducer = (state = [], action) => {
   switch (action.type) {
