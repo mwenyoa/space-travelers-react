@@ -6,7 +6,6 @@ import {
   handleJoinButton,
   handleLeaveButton,
 } from '../../Redux/missions/missionReducer';
-// import store from '../../Redux/ConfigureStore';
 
 const JoinBtn = ({ id, reserved }) => {
   const dispatch = useDispatch();
