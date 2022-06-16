@@ -3,13 +3,27 @@ import propTypes from 'prop-types';
 import { Badge } from 'react-bootstrap';
 import JoinBtn from './JoinBtn';
 
-const StatusBadge = () => (
-  <div>
-    <Badge bg="secondary">
-      Not a member
-    </Badge>
-  </div>
-);
+const StatusBadge = ({ reserved }) => {
+  let badge;
+  if (!reserved) {
+    badge = (
+      <Badge bg="secondary">
+        Not a member
+      </Badge>
+    );
+  } else {
+    badge = (
+      <Badge bg="success">
+        Active member
+      </Badge>
+    );
+  }
+  return (
+    <div>
+      {badge}
+    </div>
+  );
+};
 
 const Mission = ({
   id, name, description, reserved,
@@ -18,7 +32,7 @@ const Mission = ({
     <td><b>{name}</b></td>
     <td>{description}</td>
     <td className="align-middle">
-      <StatusBadge />
+      <StatusBadge reserved={reserved} />
     </td>
     <td className="align-middle">
       <JoinBtn id={id} reserved={reserved} />
@@ -30,6 +44,10 @@ Mission.propTypes = {
   id: propTypes.string.isRequired,
   name: propTypes.string.isRequired,
   description: propTypes.string.isRequired,
+  reserved: propTypes.bool.isRequired,
+};
+
+StatusBadge.propTypes = {
   reserved: propTypes.bool.isRequired,
 };
 
