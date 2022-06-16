@@ -1,6 +1,6 @@
 import getData from './fetchAPI';
 
-export const ADD_STORE = 'ADD_STORE';
+export const ADD_STORE = 'space-travelers-react/Redux/ADD_STORE';
 
 export const addStore = (payload) => ({
   type: ADD_STORE,
@@ -12,8 +12,8 @@ export const displayMissions = () => async (dispatch) => {
   const arr = [];
   missions.forEach((obj) => {
     arr.push({
-      mission_id: obj.mission_id,
-      mission_name: obj.mission_name,
+      id: obj.mission_id,
+      name: obj.mission_name,
       description: obj.description,
     });
   });
