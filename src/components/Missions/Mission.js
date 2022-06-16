@@ -1,8 +1,7 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import propTypes from 'prop-types';
-import { Badge, Button } from 'react-bootstrap';
-import { handleJoinButton } from '../../Redux/missions/missionReducer';
+import { Badge } from 'react-bootstrap';
+import JoinBtn from './JoinBtn';
 
 const StatusBadge = () => (
   <div>
@@ -12,21 +11,9 @@ const StatusBadge = () => (
   </div>
 );
 
-const JoinBtn = ({ id }) => {
-  const dispatch = useDispatch();
-  return (
-    <Button
-      variant="outline-secondary"
-      type="Button"
-      className="text-nowrap"
-      onClick={() => dispatch(handleJoinButton(id))}
-    >
-      Join Mission
-    </Button>
-  );
-};
-
-const Mission = ({ id, name, description }) => (
+const Mission = ({
+  id, name, description, reserved,
+}) => (
   <tr key={id}>
     <td><b>{name}</b></td>
     <td>{description}</td>
@@ -34,7 +21,7 @@ const Mission = ({ id, name, description }) => (
       <StatusBadge />
     </td>
     <td className="align-middle">
-      <JoinBtn id={id} />
+      <JoinBtn id={id} reserved={reserved} />
     </td>
   </tr>
 );
@@ -43,9 +30,7 @@ Mission.propTypes = {
   id: propTypes.string.isRequired,
   name: propTypes.string.isRequired,
   description: propTypes.string.isRequired,
+  reserved: propTypes.bool.isRequired,
 };
 
-JoinBtn.propTypes = {
-  id: propTypes.string.isRequired,
-};
 export default Mission;

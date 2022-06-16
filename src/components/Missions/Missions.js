@@ -39,8 +39,10 @@ const Missions = () => {
           </tr>
         </thead>
         <tbody>
-          {missionList.map(({ id, name, description }) => (
-            <Mission key={id} id={id} name={name} description={description} />
+          {missionList.map(({
+            id, name, description, reserved,
+          }) => (
+            <Mission key={id} id={id} name={name} description={description} reserved={reserved} />
           ))}
         </tbody>
       </Table>
