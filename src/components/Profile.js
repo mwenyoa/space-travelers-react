@@ -1,11 +1,11 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import { ListGroup, Col, Row } from "react-bootstrap";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { ListGroup, Col, Row } from 'react-bootstrap';
 
 const Profile = () => {
   const missions = useSelector((state) => state.missionReducer);
   const reservedMissions = missions.filter(
-    (mission) => mission.reserved === true
+    (mission) => mission.reserved === true,
   );
   return (
     <Row>
