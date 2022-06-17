@@ -46,6 +46,7 @@ a {
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0 15px;
+  font-weight: bold;
 }
 
 .line {
@@ -110,4 +111,13 @@ button:hover {
   margin-top: 10px;
   border-radius: 5px;
   border-color: rgb(222, 232, 236);
+}
+
+.no-styled-link {
+  text-decoration: none;
+}
+
+.styled-link {
+  text-decoration: underline;
+  border-bottom-width: 2px;
 }
