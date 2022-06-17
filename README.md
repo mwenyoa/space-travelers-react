@@ -57,7 +57,7 @@ To get a local copy up and running follow these simple example steps:
 
 - GitHub: [@githubhandle](https://github.com/mwenyoa)
 - Twitter: [@twitterhandle](https://twitter.com/anthony_mwenyo)
-- LinkedIn: [LinkedIn]([https://www.linkedin.com/in/tuğsem-saranlı-5b2a98230/?locale=en_US](https://www.linkedin.com/in/anthony-mwenyo-710318131/))
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anthony-mwenyo/)
 
 ## Show your support
 
