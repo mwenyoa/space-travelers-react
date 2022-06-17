@@ -40,6 +40,11 @@ To get a local copy up and running follow these simple example steps:
 - Install npm: 
  `npm install`
 
+## Test
+
+- To run the tests do:
+  `npm test`
+
 ### Usage
 
 - To get project open and running in your browser run `npm start` command which will start react application.
