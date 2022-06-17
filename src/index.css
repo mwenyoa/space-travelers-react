@@ -7,6 +7,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
 .d-flex {
   display: flex;
 }
@@ -52,18 +59,24 @@ a {
 }
 
 .rocket-details {
-  gap: 10%;
+  gap: 2%;
   width: 90%;
   margin: 15px auto;
 }
 
-button {
+.detail-image img {
+  width: 400px;
+  height: 300px;
   padding: 10px;
-  background-color: rgb(70, 157, 197);
-  border-radius: 5px;
+}
+
+.button {
+  padding: 8px;
+  background-color: rgb(43, 150, 199);
   color: #fff;
   font-size: large;
   margin-top: 10px;
+  border-radius: 5px;
   border-color: rgb(70, 157, 197);
 }
 
@@ -71,6 +84,11 @@ button:hover {
   cursor: pointer;
 }
 
-.reserve-rocket-info {
+.rocket-info {
   flex-direction: column;
+  margin-left: 0;
+}
+
+.rocket-desc {
+  line-height: 30px;
 }
