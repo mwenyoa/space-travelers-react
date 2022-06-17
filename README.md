@@ -17,7 +17,7 @@
 
 ## Live Demo 
 
-Coming soon...
+[Check Live Demo](https://dancing-tarsier-912542.netlify.app)
 
 ## Getting Started
 
