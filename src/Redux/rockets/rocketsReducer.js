@@ -18,6 +18,11 @@ const rocketsSlice = createSlice({
       );
       rocket.reserved = true;
     },
+    // booking cancellation reducer
+    cancelReserve: (state, action) => {
+      const rocket = state.rockets.find((rocket) => rocket.rocket_id === action.payload);
+      rocket.reserved = false;
+    },
   },
 });
 
@@ -26,6 +31,7 @@ export default rocketsSlice.reducer;
 export const {
   rocketsSuccess,
   reserveRocket,
+  cancelReserve,
   rocketsErr,
 } = rocketsSlice.actions;
 

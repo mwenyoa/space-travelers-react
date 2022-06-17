@@ -92,3 +92,10 @@ button:hover {
 .rocket-desc {
   line-height: 30px;
 }
+
+.status {
+  padding: 1px;
+  width: auto;
+  color: #fff;
+  border-radius: 5%;
+}

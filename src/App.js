@@ -1,10 +1,16 @@
-import React from 'react';
+import { React, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions/Missions';
 import Profile from './components/Profile';
+import { fetchRockets } from './Redux/rockets/rocketsReducer';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, []);
   return (
     <Routes>
       <Route exact path="/" element={<Rockets />} />
