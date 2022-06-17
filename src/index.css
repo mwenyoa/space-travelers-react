@@ -94,8 +94,20 @@ button:hover {
 }
 
 .status {
-  padding: 1px;
+  padding: 2px 4px;
+  background-color: rgb(60, 140, 177);
   width: auto;
   color: #fff;
   border-radius: 5%;
+  margin-right: 1rem;
+}
+
+.disabled {
+  padding: 8px;
+  background-color: rgb(222, 232, 236);
+  color: rgb(83, 78, 78);
+  font-size: large;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: rgb(222, 232, 236);
 }
