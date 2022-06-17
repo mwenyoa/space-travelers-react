@@ -6,7 +6,7 @@ import Rockets from '../Rockets';
 import store from '../../Redux/ConfigureStore';
 
 describe('Rocket Element Tests', () => {
-  test('Check if Rockets Component Renders orperly', () => {
+  test('Check if Rockets Component Rendersorperly', () => {
     render(
       <Provider store={store}>
         <Rockets />
