@@ -1,10 +1,14 @@
 /* eslint-disable camelcase */
+
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { reserveRocket, cancelReserve } from '../Redux/rockets/rocketsReducer';
 
 const Rockets = ({ rocket }) => {
+  const dispatch = useDispatch();
   const {
-    rocket_name, description, flickr_images, reserved,
+    rocket_id, rocket_name, description, flickr_images, reserved,
   } = rocket;
 
   return (
@@ -24,6 +28,8 @@ const Rockets = ({ rocket }) => {
           <button
             type="button"
             className={reserved === true ? 'disabled button' : 'reserve-btn button'}
+            onClick={() => (!reserved ? dispatch(reserveRocket(rocket_id))
+              : dispatch(cancelReserve(rocket_id)))}
           >
             {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
           </button>
