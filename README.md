@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps:
 
 - Copy the clone address of the repo or download as a zip into your local folder.
 
-  `git clone [https://github.com/tugsem/bookstore.git](https://github.com/mwenyoa/space-travelers-react.git)`
+  `git clone https://github.com/mwenyoa/space-travelers-react.git`
 
   `cd space-travelers-react`
 
