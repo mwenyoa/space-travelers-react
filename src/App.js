@@ -10,7 +10,8 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchRockets());
-  }, []);
+  }, [dispatch]);
+
   return (
     <Routes>
       <Route exact path="/" element={<Rockets />} />

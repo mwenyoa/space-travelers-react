@@ -9,6 +9,11 @@ const Profile = () => {
   const reservedMissions = missions.filter(
     (mission) => mission.reserved === true,
   );
+
+  const rocketsReserved = useSelector((state) => state.rockets.rockets);
+  const reservedRocketsList = rocketsReserved.filter(
+    (rocketsReserve) => rocketsReserve.reserved === true,
+  );
   return (
     <Container>
       <Row>
@@ -26,6 +31,10 @@ const Profile = () => {
           <h2>
             <b>My Rockets</b>
           </h2>
+          {reservedRocketsList.map((myRockets) => (
+            <ListGroup.Item key={myRockets.rocket_id}>{myRockets.rocket_name}</ListGroup.Item>
+          ))}
+
           <ListGroup />
         </Col>
       </Row>
