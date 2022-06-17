@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: 1px solid #000;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+}
+
+.logo-title {
+  align-items: center;
+  gap: 0 10px;
+}
+
+.nav-links {
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+.line {
+  border-left: 1.5px solid #000;
+  height: 15px;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.rocket-details {
+  gap: 2%;
+  width: 90%;
+  margin: 15px auto;
+}
+
+.detail-image img {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+}
+
+.button {
+  padding: 8px;
+  background-color: rgb(43, 150, 199);
+  color: #fff;
+  font-size: large;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: rgb(70, 157, 197);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.rocket-info {
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.rocket-desc {
+  line-height: 30px;
+}
+
+.status {
+  padding: 2px 4px;
+  background-color: rgb(60, 140, 177);
+  width: auto;
+  color: #fff;
+  border-radius: 5%;
+  margin-right: 1rem;
+}
+
+.disabled {
+  padding: 8px;
+  background-color: rgb(222, 232, 236);
+  color: rgb(83, 78, 78);
+  font-size: large;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: rgb(222, 232, 236);
+}
+
+.no-styled-link {
+  text-decoration: none;
+}
+
+.styled-link {
+  text-decoration: underline;
+  border-bottom-width: 2px;
+}
