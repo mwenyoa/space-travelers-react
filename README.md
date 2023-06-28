@@ -17,7 +17,7 @@
 
 ## Live Demo 
 
-[Check Live Demo](https://dancing-tarsier-912542.netlify.app)
+[Check Live Demo](https://space-travellers-web.netlify.app/)
 
 ## Getting Started
 
