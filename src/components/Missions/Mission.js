@@ -28,10 +28,10 @@ const StatusBadge = ({ reserved }) => {
 const Mission = ({
   id, name, description, reserved,
 }) => (
-  <tr key={id}>
+  <tr key={id} className="mission-table">
     <td><b>{name}</b></td>
     <td>{description}</td>
-    <td className="align-middle">
+    <td className="align-middle text-center">
       <StatusBadge reserved={reserved} />
     </td>
     <td className="align-middle">
