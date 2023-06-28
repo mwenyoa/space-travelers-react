@@ -16,8 +16,8 @@ const Profile = () => {
   );
   return (
     <Container>
-      <Row>
-        <Col className="mission-pr p-5">
+      <Row className="profile">
+        <Col xs={12} sm={12} md={6} lg={6} xl={6} className="mission-pr p-5">
           <h2>
             <b>My Missions</b>
           </h2>
@@ -27,7 +27,7 @@ const Profile = () => {
             ))}
           </ListGroup>
         </Col>
-        <Col className="rockets-pr p-5">
+        <Col xs={12} sm={12} md={6} lg={6} xl={6} className="rockets-pr p-5">
           <h2>
             <b>My Rockets</b>
           </h2>

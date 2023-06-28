@@ -12,11 +12,11 @@ const Rockets = ({ rocket }) => {
   } = rocket;
 
   return (
-    <div className="rocket-details d-flex">
-      <div className="detail-image d-flex">
+    <div className="rocket-details">
+      <div className="detail-image">
         <img src={flickr_images} alt={rocket_name} />
       </div>
-      <div className="reserve-rocket-info d-flex-column">
+      <div className="reserve-rocket-info">
         <h2 className="rocket-name">{rocket_name}</h2>
         <p className="rocket-description">
           <span className={reserved ? 'status' : ' '}>
