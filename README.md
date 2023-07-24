@@ -4,6 +4,8 @@
 
 > A (SPA) web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join missions
 
+![SpaceXTravels](https://github.com/mwenyoa/space-travelers-react/assets/28694196/5746d034-1f16-4d09-9b07-5d5a6b17611b)
+
 
 ## Built With
 
